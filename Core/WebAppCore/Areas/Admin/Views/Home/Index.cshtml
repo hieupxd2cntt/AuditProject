@@ -1,0 +1,40 @@
+﻿@using WebCore.Entities;
+@using WebAppCoreNew.Common;
+@using WebModelCore;
+@using System.Collections.Generic;
+@{
+    ViewBag.Title = "Index";
+    var moduleInfoModel = (ModuleInfoViewModel)ViewBag.ModuleInfo;
+    var moduleSearch = moduleInfoModel.ButtonsInfo;
+    var moduleInfo = moduleInfoModel.ModulesInfo;
+    var moduleFieldInfo = moduleInfoModel.FieldsInfo;
+    var codeInfos = (List<CodeInfo>)ViewBag.DataCombobox;
+}
+@*@using (Html.BeginForm("Submit", "Home", FormMethod.Post, new { @area = "Admin", enctype = "multipart/form-data", @class = "form-horizontal form-row-seperated", @id = "news-validate-form" }))
+    {
+        var row = moduleFieldInfo.Count / 2;
+        for (int i = 0; i < row; i++)
+        {
+            var field1 = moduleFieldInfo[i * 2];
+            var field2 = moduleFieldInfo[i * 2 + 1];
+            <div class="row margin-top-10">
+                <div class="col-12 col-lg-12">
+                    <div class="form-group left col-lg-6 col-6">
+                        <label class="col-lg-4 control-label">@field1.FieldName</label>
+                        <div class="col-lg-8 col-8">
+                            @Html.Raw(field1.GetHtmlControl(codeInfos))
+                        </div>
+                    </div>
+                    <div class="form-group left col-lg-6 col-6">
+                        <label class="col-4 col-lg4 control-label">@field2.FieldName</label>
+                        <div class="col-8 col-lg-8">
+                            @Html.Raw(field2.GetHtmlControl(codeInfos))
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        <input type="submit" class="btn-success" value="Submit" />
+
+    }*@
+@Html.Partial("~/Views/Shared/Edit.cshtml")

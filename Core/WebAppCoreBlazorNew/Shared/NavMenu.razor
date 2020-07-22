@@ -1,0 +1,17 @@
+﻿<div class="nav-item active">
+    <NavLink class="nav-link" href="counter">
+        <span class="ik ik-bar-chart-2" aria-hidden="true"></span> Counter
+    </NavLink>
+    @*<a href="index.html"><i class="ik ik-bar-chart-2"></i><span>Dashboard</span></a>*@
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

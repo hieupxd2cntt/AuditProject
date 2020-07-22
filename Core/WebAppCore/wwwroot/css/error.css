@@ -1,0 +1,170 @@
+﻿
+body {
+    color: #666;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.header_login {
+    width: 500px;
+    height: 135px;
+    float: left;
+}
+
+.login_box {
+    width: 450px;
+    float: left;
+    background: #f4f7fc;
+    border: solid 3px #ccc;
+    padding: 50px 25px;
+    border-radius: 5px;
+}
+
+select {
+    width: 120px;
+    float: right;
+    margin-top: 75px;
+    margin-right: 25px;
+}
+
+.logo {
+    width: 275px;
+    height: 60px;
+    float: left;
+    color: #fca700;
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+
+
+
+
+.title {
+    font-size: 26px;
+    width: 450px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+
+
+.input {
+    width: 340px;
+    float: left;
+    height: 34px;
+    border: none;
+    padding: 0px 10px 0 100px;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    line-height: 34px;
+}
+
+
+.button, .button2 {
+    cursor: pointer;
+}
+
+.link_text {
+    font-size: 12px;
+    color: #0c1127;
+    text-decoration: none;
+    float: left;
+}
+
+.color_999 {
+    color: #999;
+}
+
+.link_text:hover {
+    text-decoration: underline;
+}
+
+
+.text_foot {
+    font-size: 12px;
+    color: #999;
+    float: left;
+    margin-right: 5px;
+}
+
+.label_input {
+    font-size: 11px;
+    color: #999;
+    float: left;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    width: 500px;
+    float: left;
+    margin-top: 30px;
+}
+
+.warning_text {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.no_margin {
+    margin: 0;
+}
+
+.bt_warning {
+    background: none repeat scroll 0 0 #FCA700;
+    border: medium none;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 1px 0 #666666;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+    .bt_warning:hover {
+        background: #c05e03;
+        text-decoration: none;
+        color: #FFF;
+    }
+
+.field-validation-error {
+    color: #FF0000;
+    float: left;
+    font-size: 12px;
+    line-height: 25px;
+    width: 100%;
+    text-align: left;
+}
+.error_404 {
+    background: url("/Content/img/error_404_bgr.jpg") repeat scroll 0 0 / 100% auto transparent;
+    font-family: Arial,Helvetica,sans-serif !important;
+}
+.error_404_box {
+    color: #333333;
+    margin: 60px 0 0 5%;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    width: 900px;
+}
+.wrapper_button {
+    float: left;
+    width: 900px;
+}

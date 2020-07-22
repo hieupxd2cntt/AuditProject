@@ -1,0 +1,36 @@
+﻿@using Microsoft.AspNetCore.Http
+@using WebModelCore.Menu;
+@using WebCore.Entities;
+@using WebAppCoreNew.Common;
+
+@{
+    var host = $"{Context.Request.Scheme}://{Context.Request.Host}";
+}
+<style type="text/css">
+    .font-size-menu {
+        font-size: 13px !important;
+    }
+</style>
+<div>
+    <span> Thời gian hệ thống:</span><span class="text-danger" id="sp-system-date">@DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss")</span>
+</div>
+<input type="hidden" id="system-date" value='@DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")' />
+<script>
+    var date = Date.now;
+    $(document).ready(function () {
+
+        var dateSystem = $("#system-date").val().split(" ");
+        var daySystem = dateSystem[0];
+        var timeSystem = dateSystem[1];
+        var spDaySystem = daySystem.split("-")
+        var spTimeSystem = timeSystem.split(":")
+        date = new Date(spDaySystem[0], spDaySystem[1], spDaySystem[2], spTimeSystem[0], spTimeSystem[1], spTimeSystem[2])
+
+        setInterval(updateTime, 1000);
+    });
+    function updateTime() {
+        date.setSeconds(date.getSeconds() + 1)
+
+        $('#sp-system-date').html(date.getDate() + "-" + date.getMonth() + "-" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
+    }
+</script>

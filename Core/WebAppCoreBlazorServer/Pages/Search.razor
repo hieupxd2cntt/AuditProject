@@ -1,0 +1,135 @@
+﻿@page "/Search/{modId}"
+@using Newtonsoft.Json
+@using WebModelCore;
+@using WebModelCore.CodeInfo
+@using WebModelCore.Common
+@using WebAppCoreBlazorServer.Common
+@using WebAppCoreBlazorServer.Service
+@using Microsoft.AspNetCore.Mvc.Rendering
+@using Microsoft.Extensions.Configuration
+@using WebAppCoreBlazorServer.BUS
+@using WebCore.Entities;
+@using Microsoft.Extensions.Caching.Distributed
+@using WebModelCore.LogicCondition
+@using WebModelCore.ModelCheckBox
+@inject NavigationManager NavManager
+@inject IModalService Modal
+@inject IJSRuntime JSRuntime;
+@inject NavigationManager NavigationManager
+@inject IConfiguration iConfiguration
+@inject IDistributedCache distributedCache
+@inject IModuleService moduleService
+<input type="hidden" id="txtModId" name="ModId" value="@modId" />
+@{
+    var fieldSearch = moduleFieldInfo == null ? new List<ModuleFieldInfo>() : moduleFieldInfo.Where(x => x.FieldGroup == FLDGROUP.SEARCH_CONDITION && x.HideWeb != "Y").ToList();
+    var row = fieldSearch.Count() / 6;
+    var rowNotFull = fieldSearch.Count() % 6;
+    bool hasShowBtnSearch = false;
+    int rowSearch = row + (rowNotFull > 0 ? 1 : 0);
+}
+<div class="col-md-12 col-xl-12 col-xl-12 margin-top-10  not-show-print">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Tìm kiếm </h3>
+        </div>
+        <div class="card-body">
+            <WebAppCoreBlazorServer.Components.SearchComponent moduleFieldInfo="@moduleFieldInfo" moduleInfoModel="@moduleInfoModel" />
+            @*<WebAppCoreBlazorServer.Components.LogicSearchComponent modId="@modId" SearchConditionInstances="@SearchConditionInstances" />*@
+            @{
+
+                @if (!hasShowBtnSearch)
+                {
+                    <div class="row margin-top-10 not-show-print">
+                        <div class="col-md-12 col-xl-12 col-lg-12">
+                            <div class="form-group left col-lg-2 col-2">
+                                <button class="btn btn-info btn-search btn-flat" @onclick="@(() => BtnSearch(""))" id="btnSearch"> <i class="fa fa-search"></i> Tìm kiếm</button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+<input type="hidden" value="@currPage" name="CurrPage" id="currPage" />
+<div class="col-12">
+    <div class="card">
+        <div class="card-header">
+            <div class="col-md-3 col-xl-3 col-lg-3 left not-show-print">
+                <h3 class="card-title">Kết quả tìm kiếm</h3>
+            </div>
+            @{
+                if (btnInfos != null)
+                {
+                    if (btnInfos.Count() > 0)
+                    {
+                        <div class="col-md-9 col-xl-9 col-lg-9 float-right not-show-print">
+                            @{
+                                var btnToolBar = btnInfos.Where(x => x.ShowOnToolbar == "Y");
+                                foreach (var item in btnToolBar)
+                                {
+                                    // Chỉ căn cứ vào toolbar=Y để load button
+                                    //if (item.ButtonName.ToUpper() != EDefModBtn.BTN_VIEW.ToString().ToUpper() && item.ButtonName.ToUpper() != EDefModBtn.BTN_EDIT.ToString().ToUpper())
+                                    //{
+                                    <div class="float-right m-1">
+                                        @if (checkBtnDels.Any())
+                                        {
+                                            <input type="hidden" value="@checkBtnDels.First().CallSubModule" id="txtSubModDel" />
+                                            <input type="hidden" value="@checkBtnDels.First().CallModuleID" id="txtModDel" />
+                                        }
+
+                                        @{
+                                            if (item.ButtonName.Contains(EDefModBtn.BTN_ADD.ToString().ToUpper()) && checkBtnEdits.Count() > 0 && (groupMods.Where(x => x.ModId == checkBtnEdits.First().CallModuleID).Count() > 0 || true))
+                                            {
+                                                <button class="btn btn-info btn-search btn-flat" id="btn@(item.ButtonName)" name="@item.ButtonName" @onclick="@(()=>CallMod(item.CallModuleID,modId))"><i class="fa fa-plus"></i>@item.ButtonName.GetLanguageBtn(moduleInfoModel.LanguageInfo)</button>
+                                            }
+                                            @*else if (item.ButtonName.ToUpper() == EDefModBtn.BTN_DELETE.ToString().ToUpper() && groupMods.Where(x => x.ModId == checkBtnDels.First().CallModuleID).Count() > 0)
+                                                {
+                                                    <button class="btn btn-default" id="btn@(item.ButtonName)" name="@item.ButtonName"><i class="fa fa-trash" title="Xóa"></i> @item.ButtonName.GetLanguageBtn(moduleInfoModel.LanguageInfo)</button>
+                                                    <input type="hidden" value="@checkBtnDels.First().CallSubModule" id="txtSubModDel" />
+                                                    <input type="hidden" value="@checkBtnDels.First().CallModuleID" id="txtModDel" />
+                                                }*@
+                                            else if (item.ButtonName.ToUpper() == EDefModBtn.BTN_EXPORT.ToString().ToUpper())
+                                            {
+                                                <button class="btn btn-default" id="btn@(item.ButtonName)" name="@item.ButtonName" onclick="$('#btnExport').click()"><i class="fa fa-file-excel" title="Xuất Excel"></i>Xuất Excel</button>
+                                            }
+                                            else if (item.ButtonName.ToUpper() == EDefModBtn.BTN_PRINT.ToString().ToUpper())
+                                            {
+                                                <button class="btn btn-info btn-search btn-flat" id="btn@(item.ButtonName)" name="@item.ButtonName" @onclick="@(()=>CallMod(item.CallModuleID,modId))"><i class="fa fa-plus"></i>@item.ButtonName.GetLanguageBtn(moduleInfoModel.LanguageInfo)</button>
+                                            }
+                                            else if (groupMods.Where(x => x.ModId == item.CallModuleID).Count() > 0 || true)
+                                            {
+                                                if (item.ButtonName.ToUpper() != EDefModBtn.BTN_DELETE.ToString().ToUpper())
+                                                {
+                                                    <button class="btn btn-info btn-search btn-flat" id="btn@(item.ButtonName)" name="@item.ButtonName" @onclick="@(()=>CallMod(item.CallModuleID,modId))"><i class="fa fa-plus"></i>@item.ButtonName.GetLanguageBtn(moduleInfoModel.LanguageInfo)</button>
+
+                                                    //<a href="@Url.Action("Index","Home",new {modId=item.CallModuleID} )" class="btn btn-default" id="btn@(item.ButtonName)" name="@item.ButtonName"> @item.ButtonName.GetLanguageBtn(moduleInfoModel.LanguageInfo)</a>
+                                                }
+                                            }
+                                        }
+                                    </div>
+                                    // }
+                                }
+                            }
+                        </div>
+                    }
+                }
+            }
+        </div>
+        <div class="card-body">
+            @{
+                var checkGroup = moduleFieldInfo.Where(x => x.GroupOnSearch == "Y");
+                if (checkGroup.Any())
+                {
+                    <WebAppCoreBlazorServer.Components.ModSearchGridGroup btnInfos="btnInfos" codeInfos="codeInfos" DataSearch="DataSearch" ModuleFieldInfos="moduleFieldInfo" ModuleInfoModel="moduleInfoModel" Search="this" />
+                }
+                else
+                {
+                    <WebAppCoreBlazorServer.Components.ModSearchGridDefault btnInfos="btnInfos" codeInfos="codeInfos" DataSearch="DataSearch" ModuleFieldInfos="moduleFieldInfo" ModuleInfoModel="moduleInfoModel" Search="this" />
+                }
+            }
+
+        </div>
+    </div>
+</div>

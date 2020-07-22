@@ -1,0 +1,645 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebAppCoreBlazorServer\\WebAppCoreBlazorServer.csproj": {}
+  },
+  "projects": {
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\Blazored.TextEditor\\Blazored.TextEditor.csproj": {
+      "version": "1.0.3",
+      "restore": {
+        "projectUniqueName": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\Blazored.TextEditor\\Blazored.TextEditor.csproj",
+        "projectName": "Blazored.TextEditor",
+        "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\Blazored.TextEditor\\Blazored.TextEditor.csproj",
+        "packagesPath": "C:\\Users\\HieuPX\\.nuget\\packages\\",
+        "outputPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\Blazored.TextEditor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HieuPX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Components": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\GridBlazor\\GridBlazor.csproj": {
+      "version": "1.6.9",
+      "restore": {
+        "projectUniqueName": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\GridBlazor\\GridBlazor.csproj",
+        "projectName": "GridBlazor",
+        "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\GridBlazor\\GridBlazor.csproj",
+        "packagesPath": "C:\\Users\\HieuPX\\.nuget\\packages\\",
+        "outputPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\GridBlazor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HieuPX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\GridShared\\GridShared.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\GridShared\\GridShared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.11.0, )"
+            },
+            "Microsoft.AspNetCore.Components": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Primitives": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[3.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\GridShared\\GridShared.csproj": {
+      "version": "2.15.3",
+      "restore": {
+        "projectUniqueName": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\GridShared\\GridShared.csproj",
+        "projectName": "GridShared",
+        "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\GridShared\\GridShared.csproj",
+        "packagesPath": "C:\\Users\\HieuPX\\.nuget\\packages\\",
+        "outputPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\GridShared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HieuPX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\Blazored.Modal\\Blazored.Modal.csproj": {
+      "version": "4.1.0",
+      "restore": {
+        "projectUniqueName": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\Blazored.Modal\\Blazored.Modal.csproj",
+        "projectName": "Blazored.Modal",
+        "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\Blazored.Modal\\Blazored.Modal.csproj",
+        "packagesPath": "C:\\Users\\HieuPX\\.nuget\\packages\\",
+        "outputPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\Blazored.Modal\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HieuPX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Components": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebAppCoreBlazorServer\\WebAppCoreBlazorServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebAppCoreBlazorServer\\WebAppCoreBlazorServer.csproj",
+        "projectName": "WebAppCoreBlazorServer",
+        "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebAppCoreBlazorServer\\WebAppCoreBlazorServer.csproj",
+        "packagesPath": "C:\\Users\\HieuPX\\.nuget\\packages\\",
+        "outputPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebAppCoreBlazorServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HieuPX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\Blazored.TextEditor\\Blazored.TextEditor.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\Blazored.TextEditor\\Blazored.TextEditor.csproj"
+              },
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\GridBlazor\\GridBlazor.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\GridBlazor\\GridBlazor.csproj"
+              },
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\Blazored.Modal\\Blazored.Modal.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\Blazored.Modal\\Blazored.Modal.csproj"
+              },
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Common\\WebCore.Common.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Common\\WebCore.Common.csproj"
+              },
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj"
+              },
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebModelCore\\WebModelCore.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebModelCore\\WebModelCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Blazored.FluentValidation": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "Blazored.SessionStorage": {
+              "target": "Package",
+              "version": "[1.0.12, )"
+            },
+            "Blazored.TextEditor": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[5.0.0-preview.5.20279.2, )"
+            },
+            "Microsoft.AspNetCore.Blazor.HttpClient": {
+              "target": "Package",
+              "version": "[3.2.0-preview3.20168.3, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.Caching.Redis": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.7.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[2.10.16, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
+            "Serilog.Sinks.Elasticsearch": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Common\\WebCore.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Common\\WebCore.Common.csproj",
+        "projectName": "WebCore.Common",
+        "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Common\\WebCore.Common.csproj",
+        "packagesPath": "C:\\Users\\HieuPX\\.nuget\\packages\\",
+        "outputPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HieuPX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[2.18.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj",
+        "projectName": "WebCore.Entities",
+        "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj",
+        "packagesPath": "C:\\Users\\HieuPX\\.nuget\\packages\\",
+        "outputPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HieuPX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\Blazored.TextEditor\\Blazored.TextEditor.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\Blazored.TextEditor\\Blazored.TextEditor.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebModelCore\\WebModelCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebModelCore\\WebModelCore.csproj",
+        "projectName": "WebModelCore",
+        "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebModelCore\\WebModelCore.csproj",
+        "packagesPath": "C:\\Users\\HieuPX\\.nuget\\packages\\",
+        "outputPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebModelCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HieuPX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

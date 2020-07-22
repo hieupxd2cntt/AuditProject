@@ -1,0 +1,158 @@
+﻿.left{
+    float:left;
+}
+.right {
+    float: right;
+}
+.padding-top-10{
+    padding-top:10px;
+}
+.form-group {
+    float: left;
+}
+.margin-r-15{
+    margin-right:15px !important;
+}
+.margin-r-10 {
+    margin-right: 10px !important;
+}
+.margin-top-10 {
+    margin-top: 10px !important;
+}
+.margin-bottom-10 {
+    margin-bottom: 10px !important;
+}
+.margin-left-0{
+    margin-left:0px !important;
+}
+.error {
+    color: red !important;
+}
+.no-padding{
+    padding:0px !important;
+}
+#paging-list-request .pagination {
+    margin: 0;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.pagination > li {
+    display: inline;
+}
+
+li {
+    border-radius: 0 !important;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.pagination > li > a {
+    background: #fafafa;
+    color: #666;
+    cursor: pointer;
+}
+.pagination > li.active > a {
+    background: #017EC6;
+    color: white;
+    cursor: pointer;
+}
+.select2-container .select2-selection--single {
+    height: 38px !important;
+}
+.color-menu{
+    color:white !important;
+}
+.nav-item {
+    border-bottom:solid 1px !important;
+    border-bottom-color:white !important;
+}
+.border-bottom-div {
+    border-bottom: solid 1px !important;
+    border-bottom-color: white !important;
+}
+.btn-search {
+    background-color: #017EC6 !important;
+}
+.color-icon-menu {
+    color: white !important;
+}
+.color-icon-sub-menu {
+  
+}
+.padding-left-0 {
+    padding-left: 0px !important;
+}
+.os-content{
+    padding:0px  3px 0px 0px !important;
+}
+@media print{
+    .not-show-print{
+        display:none !important;
+    }
+    .table-print{
+        width:100% !important;
+    }
+    .show-print{
+        display:block !important;
+    }
+    .header-qc {
+        page: landscape;
+    }
+    @page portrait {
+        size: 6in 9in;
+    }
+
+    @page landscape {
+        size: 9in 6in;
+    }
+
+    .landscape-content {
+        page: landscape !important;
+    }
+
+    .portrait-content {
+        page: portrait !important;
+    }
+
+}
+.modal-backdrop {
+    z-index:999 !important;
+}
+.show-print {
+    display: none;
+}
+.padding-right-10{
+    padding-right:10px !important;
+}

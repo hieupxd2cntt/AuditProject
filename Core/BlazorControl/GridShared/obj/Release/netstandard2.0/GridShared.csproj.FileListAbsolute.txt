@@ -1,0 +1,9 @@
+G:\ATuanLM\AuditProject\Audit\Program\Core\BlazorControl\GridShared\bin\Release\netstandard2.0\GridShared.deps.json
+G:\ATuanLM\AuditProject\Audit\Program\Core\BlazorControl\GridShared\bin\Release\netstandard2.0\GridShared.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\BlazorControl\GridShared\bin\Release\netstandard2.0\GridShared.pdb
+G:\ATuanLM\AuditProject\Audit\Program\Core\BlazorControl\GridShared\obj\Release\netstandard2.0\GridShared.csprojAssemblyReference.cache
+G:\ATuanLM\AuditProject\Audit\Program\Core\BlazorControl\GridShared\obj\Release\netstandard2.0\GridShared.AssemblyInfoInputs.cache
+G:\ATuanLM\AuditProject\Audit\Program\Core\BlazorControl\GridShared\obj\Release\netstandard2.0\GridShared.AssemblyInfo.cs
+G:\ATuanLM\AuditProject\Audit\Program\Core\BlazorControl\GridShared\obj\Release\netstandard2.0\GridShared.csproj.CoreCompileInputs.cache
+G:\ATuanLM\AuditProject\Audit\Program\Core\BlazorControl\GridShared\obj\Release\netstandard2.0\GridShared.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\BlazorControl\GridShared\obj\Release\netstandard2.0\GridShared.pdb

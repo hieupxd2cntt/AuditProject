@@ -1,0 +1,14 @@
+G:\ATuanLM\AuditProject\Audit\Program\Core\DataAccess\bin\Release\netcoreapp3.1\Core.DataAccess.deps.json
+G:\ATuanLM\AuditProject\Audit\Program\Core\DataAccess\bin\Release\netcoreapp3.1\Core.DataAccess.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\DataAccess\bin\Release\netcoreapp3.1\Core.DataAccess.pdb
+G:\ATuanLM\AuditProject\Audit\Program\Core\DataAccess\bin\Release\netcoreapp3.1\WebCore.Common.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\DataAccess\bin\Release\netcoreapp3.1\WebCore.Entities.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\DataAccess\bin\Release\netcoreapp3.1\WebCore.Common.pdb
+G:\ATuanLM\AuditProject\Audit\Program\Core\DataAccess\bin\Release\netcoreapp3.1\WebCore.Entities.pdb
+G:\ATuanLM\AuditProject\Audit\Program\Core\DataAccess\obj\Release\netcoreapp3.1\Core.DataAccess.csprojAssemblyReference.cache
+G:\ATuanLM\AuditProject\Audit\Program\Core\DataAccess\obj\Release\netcoreapp3.1\Core.DataAccess.AssemblyInfoInputs.cache
+G:\ATuanLM\AuditProject\Audit\Program\Core\DataAccess\obj\Release\netcoreapp3.1\Core.DataAccess.AssemblyInfo.cs
+G:\ATuanLM\AuditProject\Audit\Program\Core\DataAccess\obj\Release\netcoreapp3.1\Core.DataAccess.csproj.CoreCompileInputs.cache
+G:\ATuanLM\AuditProject\Audit\Program\Core\DataAccess\obj\Release\netcoreapp3.1\Core.DataAccess.csproj.CopyComplete
+G:\ATuanLM\AuditProject\Audit\Program\Core\DataAccess\obj\Release\netcoreapp3.1\Core.DataAccess.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\DataAccess\obj\Release\netcoreapp3.1\Core.DataAccess.pdb

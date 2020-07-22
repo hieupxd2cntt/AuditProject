@@ -1,0 +1,14 @@
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebCore.Common\bin\Release\netcoreapp3.1\WebCore.Common.deps.json
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebCore.Common\bin\Release\netcoreapp3.1\WebCore.Common.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebCore.Common\bin\Release\netcoreapp3.1\WebCore.Common.pdb
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebCore.Common\bin\Release\netcoreapp3.1\WebCore.Entities.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebCore.Common\bin\Release\netcoreapp3.1\WebCore.Entities.pdb
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebCore.Common\obj\Release\netcoreapp3.1\WebCore.Common.csprojAssemblyReference.cache
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebCore.Common\obj\Release\netcoreapp3.1\WebCore.Common.AssemblyInfoInputs.cache
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebCore.Common\obj\Release\netcoreapp3.1\WebCore.Common.AssemblyInfo.cs
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebCore.Common\obj\Release\netcoreapp3.1\WebCore.Common.csproj.CoreCompileInputs.cache
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebCore.Common\obj\Release\netcoreapp3.1\WebCore.Common.csproj.CopyComplete
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebCore.Common\obj\Release\netcoreapp3.1\WebCore.Common.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebCore.Common\obj\Release\netcoreapp3.1\WebCore.Common.pdb
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebCore.Common\bin\Release\netcoreapp3.1\Blazored.TextEditor.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebCore.Common\bin\Release\netcoreapp3.1\Blazored.TextEditor.pdb

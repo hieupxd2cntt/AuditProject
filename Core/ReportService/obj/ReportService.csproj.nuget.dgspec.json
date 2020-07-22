@@ -1,0 +1,367 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\ReportService\\ReportService.csproj": {}
+  },
+  "projects": {
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\Blazored.TextEditor\\Blazored.TextEditor.csproj": {
+      "version": "1.0.3",
+      "restore": {
+        "projectUniqueName": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\Blazored.TextEditor\\Blazored.TextEditor.csproj",
+        "projectName": "Blazored.TextEditor",
+        "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\Blazored.TextEditor\\Blazored.TextEditor.csproj",
+        "packagesPath": "C:\\Users\\HieuPX\\.nuget\\packages\\",
+        "outputPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\Blazored.TextEditor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HieuPX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Components": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\DataAccess\\Core.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\DataAccess\\Core.DataAccess.csproj",
+        "projectName": "Core.DataAccess",
+        "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\DataAccess\\Core.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\HieuPX\\.nuget\\packages\\",
+        "outputPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HieuPX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Common\\WebCore.Common.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Common\\WebCore.Common.csproj"
+              },
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "DevExpress.Xpo": {
+              "target": "Package",
+              "version": "[20.1.3, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[4.1.3.1, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[2.19.60, )"
+            },
+            "System.ServiceModel.Primitives": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\ReportService\\ReportService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\ReportService\\ReportService.csproj",
+        "projectName": "ReportService",
+        "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\ReportService\\ReportService.csproj",
+        "packagesPath": "C:\\Users\\HieuPX\\.nuget\\packages\\",
+        "outputPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\ReportService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HieuPX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\DataAccess\\Core.DataAccess.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\DataAccess\\Core.DataAccess.csproj"
+              },
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Common\\WebCore.Common.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Common\\WebCore.Common.csproj"
+              },
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Common\\WebCore.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Common\\WebCore.Common.csproj",
+        "projectName": "WebCore.Common",
+        "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Common\\WebCore.Common.csproj",
+        "packagesPath": "C:\\Users\\HieuPX\\.nuget\\packages\\",
+        "outputPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HieuPX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[2.18.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj",
+        "projectName": "WebCore.Entities",
+        "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\WebCore.Entities.csproj",
+        "packagesPath": "C:\\Users\\HieuPX\\.nuget\\packages\\",
+        "outputPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\WebCore.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HieuPX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\Blazored.TextEditor\\Blazored.TextEditor.csproj": {
+                "projectPath": "G:\\ATuanLM\\AuditProject\\Audit\\Program\\Core\\BlazorControl\\Blazored.TextEditor\\Blazored.TextEditor.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

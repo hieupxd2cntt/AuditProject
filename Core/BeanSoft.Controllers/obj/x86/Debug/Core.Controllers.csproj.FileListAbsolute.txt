@@ -1,0 +1,2 @@
+G:\ATuanLM\AuditProject\Audit\Program\Core\BeanSoft.Controllers\obj\x86\Debug\Core.Controllers.csprojAssemblyReference.cache
+G:\ATuanLM\AuditProject\Audit\Program\Core\BeanSoft.Controllers\obj\x86\Debug\Core.Controllers.csproj.CoreCompileInputs.cache

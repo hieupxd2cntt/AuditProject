@@ -1,0 +1,12 @@
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebModel\bin\Debug\netstandard2.0\WebModel.deps.json
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebModel\bin\Debug\netstandard2.0\WebModel.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebModel\bin\Debug\netstandard2.0\WebModel.pdb
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebModel\bin\Debug\netstandard2.0\Web.Entities.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebModel\bin\Debug\netstandard2.0\Web.Entities.pdb
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebModel\obj\Debug\netstandard2.0\WebModel.csprojAssemblyReference.cache
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebModel\obj\Debug\netstandard2.0\WebModel.AssemblyInfoInputs.cache
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebModel\obj\Debug\netstandard2.0\WebModel.AssemblyInfo.cs
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebModel\obj\Debug\netstandard2.0\WebModel.csproj.CoreCompileInputs.cache
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebModel\obj\Debug\netstandard2.0\WebModel.csproj.CopyComplete
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebModel\obj\Debug\netstandard2.0\WebModel.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\WebModel\obj\Debug\netstandard2.0\WebModel.pdb

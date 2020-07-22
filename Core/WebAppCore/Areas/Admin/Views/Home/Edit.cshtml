@@ -1,0 +1,294 @@
+﻿@using WebCore.Entities;
+@using WebAppCoreNew.Common;
+@using WebModelCore;
+@using WebModelCore.CodeInfo;
+@using System.Collections.Generic;
+@using WebModelCore.Common;
+@using WebAppCore.Common
+@model string;
+
+@{
+    var moduleInfoModel = (ModuleInfoModel)ViewBag.ModuleInfo;
+    ViewBag.Title = moduleInfoModel.ModulesInfo == null ? "" : moduleInfoModel.ModulesInfo.ModuleName.GetLanguageTitle(moduleInfoModel.LanguageInfo);
+    var moduleSearch = moduleInfoModel.ButtonsInfo;
+    var moduleInfo = moduleInfoModel.ModulesInfo;
+    var moduleFieldInfo = moduleInfoModel.FieldsInfo.Where(x => x.FieldGroup == FLDGROUP.COMMON.ToString()).Where(x => x.HideWeb != "Y").OrderBy(x => x.Order).ToList();
+    var codeInfos = (List<CodeInfoModel>)ViewBag.DataCombobox;
+    var dataControl = (List<dynamic>)ViewBag.DataControl;
+    var edit = (bool)ViewBag.Edit;
+    string keyEdit = @ViewBag.KeyEdit;
+    var hasBarCodeControl = moduleFieldInfo.Where(x => x.ControlType == EControlType.BC.ToString()).Count();
+}
+<link href="~/css/image-fullscreen.css" rel="stylesheet" />
+<link href="~/plugins/schedule/schedule.css" rel="stylesheet" />
+
+@using (Html.BeginForm("Edit", "Home", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal form-row-seperated padding-top-10", @id = "edit-validate-form" }))
+{
+    <input type="hidden" id="txtModId" name="ModId" value="@((string)ViewBag.ModId)" />
+    <input type="hidden" id="txtSubModId" name="SubModId" value="@ViewBag.SubModId" />
+    <input type="hidden" id="txtKeyEdit" name="KeyEdit" value="@ViewBag.KeyEdit" />
+    <input type="hidden" id="txtModSearchId" name="ModSearchId" value="@ViewBag.ModSearchId" />
+    <input type="hidden" id="txtFieldNameEdit" name="FieldNameEdit" value="@ViewBag.FieldNameEdit" />
+    <input type="hidden" id="@ViewBag.FieldNameEdit" name="@ViewBag.FieldNameEdit" value="@ViewBag.KeyEdit" />
+    if (!String.IsNullOrEmpty(Model))
+    {
+        <input type="hidden" value="@Model" id="txtError" />
+    }
+    var lstFieldAdded = new List<string>();
+    var lstFieldNotAdd = moduleFieldInfo.ToList();
+    while (lstFieldNotAdd.Count() != 0)
+    {
+        var field1 = lstFieldNotAdd[0];
+        ModuleFieldInfo field2 = null;
+        if (lstFieldNotAdd.Count() > 1)
+        {
+            field2 = lstFieldNotAdd[1];
+        }
+
+        var checkField1 = lstFieldAdded.Where(x => x == field1.FieldID);
+        if (!string.IsNullOrEmpty(field1.FieldsGroup))
+        {
+            var fieldGroups = lstFieldNotAdd.Where(x => x.FieldsGroup == field1.FieldsGroup);
+            var textGroupField = fieldGroups.First().GetGroupFieldTextBtn(moduleInfoModel.LanguageInfo);
+            if (string.IsNullOrEmpty(textGroupField))
+            {
+                <div class="">
+                    @{
+                        var countFieldGroups = fieldGroups.Count();
+                        foreach (var fieldGroup in fieldGroups.ToList())
+                        {
+                            <div class="col-sm-@(12/countFieldGroups) form-group">
+                                <label class="control-label">
+                                    @fieldGroup.GetLanguage(moduleInfoModel.LanguageInfo, moduleInfoModel.ModulesInfo.ModuleName)
+                                    @if (fieldGroup.Nullable == EYesNo.N.ToString())
+                                    {
+                                        <span class="text-danger">*</span>
+                                    }
+                                </label>
+                                @Html.Raw(fieldGroup.GetHtmlControl(codeInfos, moduleInfoModel.LanguageInfo, "", dataControl, moduleInfoModel.ModulesInfo.ModuleName, keyEdit))
+                            </div>
+                            lstFieldNotAdd.Remove(fieldGroup);
+                        }
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="panel-group" id="accordion@(moduleInfo.ModuleName+"-"+fieldGroups.First().FieldsGroup)" role="tablist" aria-multiselectable="true">
+                    <div class="card">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="card-header">
+                                <span class="left">@textGroupField</span>
+
+                                <a role="button" data-toggle="collapse" class="right" data-parent="#accordion@(moduleInfo.ModuleName+"-"+fieldGroups.First().FieldsGroup)" href="#@(moduleInfo.ModuleName+"-"+fieldGroups.First().FieldsGroup)" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="more-less ik ik-plus-circle"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="@(moduleInfo.ModuleName+"-"+fieldGroups.First().FieldsGroup)" class="panel-collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="card-body">
+                                <div>
+                                    @{
+                                        var countFieldGroups = fieldGroups.Count();
+                                        foreach (var fieldGroup in fieldGroups.ToList())
+                                        {
+                                            <div class="col-sm-@(12/countFieldGroups) form-group">
+                                                <label class="control-label">
+                                                    @fieldGroup.GetLanguage(moduleInfoModel.LanguageInfo, moduleInfoModel.ModulesInfo.ModuleName)
+                                                    @if (fieldGroup.Nullable == EYesNo.N.ToString())
+                                                    {
+                                                        <span class="text-danger">*</span>
+                                                    }
+                                                </label>
+                                                @Html.Raw(fieldGroup.GetHtmlControl(codeInfos, moduleInfoModel.LanguageInfo, "", dataControl, moduleInfoModel.ModulesInfo.ModuleName, keyEdit))
+                                            </div>
+                                            lstFieldNotAdd.Remove(fieldGroup);
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            }
+            continue;
+        }
+        else
+        {
+            if (field2 != null && !string.IsNullOrEmpty(field2.FieldsGroup))
+            {
+                <div class="row col-sm-12">
+                    <div class="form-group col-sm-6">
+                        <label class="control-label">
+                            @field1.GetLanguage(moduleInfoModel.LanguageInfo, moduleInfoModel.ModulesInfo.ModuleName)
+                            @if (field1.Nullable == EYesNo.N.ToString())
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        @Html.Raw(field1.GetHtmlControl(codeInfos, moduleInfoModel.LanguageInfo, "", dataControl, moduleInfoModel.ModulesInfo.ModuleName, keyEdit))
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label class="control-label">
+                            @field2.GetLanguage(moduleInfoModel.LanguageInfo, moduleInfoModel.ModulesInfo.ModuleName)
+                            @if (field2.Nullable == EYesNo.N.ToString())
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        @Html.Raw(field1.GetHtmlControl(codeInfos, moduleInfoModel.LanguageInfo, "", dataControl, moduleInfoModel.ModulesInfo.ModuleName, keyEdit))
+                    </div>
+                </div>
+                lstFieldNotAdd.Remove(field1);
+                var fieldGroups = lstFieldNotAdd.Where(x => x.FieldsGroup == field2.FieldsGroup);
+                <div class="row  col-sm-12">
+                    @{
+                        var countFieldGroups = fieldGroups.Count();
+                        foreach (var fieldGroup in fieldGroups.ToList())
+                        {
+                            <div class="col-sm-@(12/countFieldGroups) form-group">
+                                <label class="control-label">
+                                    @fieldGroup.GetLanguage(moduleInfoModel.LanguageInfo, moduleInfoModel.ModulesInfo.ModuleName)
+                                    @if (fieldGroup.Nullable == EYesNo.N.ToString())
+                                    {
+                                        <span class="text-danger">*</span>
+                                    }
+                                </label>
+
+                                @Html.Raw(fieldGroup.GetHtmlControl(codeInfos, moduleInfoModel.LanguageInfo, "", dataControl, moduleInfoModel.ModulesInfo.ModuleName, keyEdit))
+                            </div>
+                            lstFieldNotAdd.Remove(fieldGroup);
+                        }
+                    }
+                </div>
+            }
+            else if (field2 == null)
+            {
+                <div class="row  col-sm-12">
+                    <div class="form-group col-sm-6">
+                        <label class="control-label">
+                            @field1.GetLanguage(moduleInfoModel.LanguageInfo, moduleInfoModel.ModulesInfo.ModuleName)
+                            @if (field1.Nullable == EYesNo.N.ToString())
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        @Html.Raw(field1.GetHtmlControl(codeInfos, moduleInfoModel.LanguageInfo, "", dataControl, moduleInfoModel.ModulesInfo.ModuleName, keyEdit))
+                    </div>
+                </div>
+                lstFieldNotAdd.Remove(field1);
+            }
+            else if (string.IsNullOrEmpty(field2.FieldsGroup))
+            {
+                <div class="row col-sm-12 ">
+                    <div class="form-group col-sm-6">
+                        <label class="control-label">
+                            @field1.GetLanguage(moduleInfoModel.LanguageInfo, moduleInfoModel.ModulesInfo.ModuleName)
+                            @if (field1.Nullable == EYesNo.N.ToString())
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        @Html.Raw(field1.GetHtmlControl(codeInfos, moduleInfoModel.LanguageInfo, "", dataControl, moduleInfoModel.ModulesInfo.ModuleName, keyEdit))
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label class="control-label">
+                            @field2.GetLanguage(moduleInfoModel.LanguageInfo, moduleInfoModel.ModulesInfo.ModuleName)
+                            @if (field1.Nullable == EYesNo.N.ToString())
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        @Html.Raw(field2.GetHtmlControl(codeInfos, moduleInfoModel.LanguageInfo, "", dataControl, moduleInfoModel.ModulesInfo.ModuleName, keyEdit))
+                    </div>
+                </div>
+                lstFieldNotAdd.Remove(field1);
+                lstFieldNotAdd.Remove(field2);
+            }
+        }
+    }
+
+    <div class="col-sm-12 text-center">
+        <div>
+            @if (edit)
+            {
+                <button type="submit" class="btn btn-success save"><i class="fa fa-save"></i> &nbsp; Lưu</button>
+                <button type="button" class="btn call-realtime  d-none"><i class="fa fa-save"></i> &nbsp; CallRealtime</button>
+            }
+            @if (!string.IsNullOrEmpty(ViewBag.ModSearchId))
+            {
+                <a href="@Url.Action("Index","Home",new { modId=ViewBag.ModSearchId,parr=ViewBag.KeyEdit})" class="btn btn-default"><i class="fa close"></i> &nbsp; Hủy</a>
+            }
+        </div>
+    </div>
+
+}
+<input type="hidden" id="txtSuccess" value="@ViewBag.Success" />
+<input type="hidden" id="urlAjaxLoadModSchedule" value="@Url.Action("AjaxLoadModSchedule",new { area = "Admin" })" />
+@if (codeInfos.Any() && codeInfos.Where(x => x.ControlType == EControlType.SCL.ToString()).Any())
+{
+    var scls = codeInfos.Where(x => x.ControlType == EControlType.SCL.ToString());
+    foreach (var item in scls)
+    {
+        <input type="hidden" id="@("calendar-schedule-"+item.Name)" value="@Newtonsoft.Json.JsonConvert.SerializeObject(item.ScheduleControls)" />
+    }
+    <div class="modal" tabindex="-1" role="dialog" id="modal-calendar-schedule">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="body-schedule">
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@if ((string)ViewBag.ModId == ConstMod.ModViewPdf)
+{
+    <input type="hidden" id="txtGroup" value="PrivateGroup" />
+}
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $("#edit-validate-form").validate();
+            $(".text-number").keypress(function (e) {
+                //if the letter is not digit then display error and don't type anything
+                if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                    bootbox.alert("Đây là trường số");
+                    return false;
+                }
+            });
+        });
+
+    </script>
+
+}
+@if (moduleInfo != null && moduleInfo.IsRealTime == "Y")
+{
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/Home/realtime.js"></script>
+}
+@if (moduleInfo != null && moduleInfo.ModuleID == "05H10")
+{
+    <script>
+        $(".save").click(function () {
+            $(".call-realtime").click();
+        });
+        function LoadSop() {
+            console.log('ff');
+        }
+    </script>
+
+}
+
+<script src="~/plugins/schedule/schedule.js"></script>
+<script src="~/js/calendar-schedule.js"></script>
+<script src="~/js/Home/Edit.js"></script>
+<script src="~/js/CommonJs/EventControl.js"></script>

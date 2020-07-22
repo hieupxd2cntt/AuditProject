@@ -1,0 +1,45 @@
+﻿@using Microsoft.AspNetCore.Http
+@using WebModelCore.Menu;
+@using WebCore.Entities;
+@using WebAppCoreNew.Common;
+@{
+    var host = $"{Context.Request.Scheme}://{Context.Request.Host}";
+
+}
+<style type="text/css">
+    .font-size-menu {
+        font-size: 13px !important;
+    }
+</style>
+<div class="col-md-12 col-12 col-lg-12">
+    @{
+        if (!String.IsNullOrEmpty(ViewBag.Line))
+        {
+            <div class="left col-md-3 col-3 col-lg-3">
+                <i class="fa fa-life-ring" title="Dây chuyền"></i>
+                <label class="col-md-7 col-7 col-lg-7"><span class="danger ">@ViewBag.Line</span></label>
+            </div>
+        }
+        if (!String.IsNullOrEmpty(ViewBag.FactoryName))
+        {
+            <div class="left col-3 col-lg-3">
+                <i class="fa fa-industry" title="Nhà máy"></i>
+                <label class="col-md-7 col-7 col-lg-7"><span class="danger">@ViewBag.FactoryName</span></label>
+            </div>
+        }
+        if (!String.IsNullOrEmpty(ViewBag.Process))
+        {
+            <div class="left col-md-3 col-3 col-lg-3">
+                <i class="fa fa-signal" title="Thao tác"></i>
+                <label class="col-md-7 col-7 col-lg-7"><span class="danger">@ViewBag.Process</span></label>
+            </div>
+        }
+        if (!String.IsNullOrEmpty(ViewBag.FactoryName))
+        {
+            <div class="left col-md-3 col-3 col-lg-3">
+                <i class="fa fa-motorcycle" title="Thành phẩm"></i>
+                <label class="col-md-7 col-7 col-lg-7"><span class="danger">@ViewBag.SkuName</span></label>
+            </div>
+        }
+    }
+</div>

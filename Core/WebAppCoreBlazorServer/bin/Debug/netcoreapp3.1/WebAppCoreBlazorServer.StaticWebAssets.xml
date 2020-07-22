@@ -1,0 +1,6 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/Blazored.Modal" Path="G:\ATuanLM\AuditProject\Audit\Program\Core\Blazored.Modal\wwwroot\" />
+  <ContentRoot BasePath="_content/Blazored.TextEditor" Path="G:\ATuanLM\AuditProject\Audit\Program\Core\BlazorControl\Blazored.TextEditor\wwwroot\" />
+  <ContentRoot BasePath="_content/GridBlazor" Path="G:\ATuanLM\AuditProject\Audit\Program\Core\BlazorControl\GridBlazor\wwwroot\" />
+  <ContentRoot BasePath="_content/Radzen.Blazor" Path="C:\Users\HieuPX\.nuget\packages\radzen.blazor\2.10.16\build\..\staticwebassets\" />
+</StaticWebAssets>

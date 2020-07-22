@@ -1,0 +1,22 @@
+﻿@page "/counter"
+@*@using WebAppCoreBlazorNew.Service*@
+@using WebAppCoreBlazorWebAssembly.Service;
+@inject IModuleService module1
+@*@inject IDITest module*@
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private async Task IncrementCount()
+    {
+        currentCount++;
+        // var a = await module.Test();
+        var bb = await module1.GetModule(("03200"));
+        var abc = 1;
+    }
+}

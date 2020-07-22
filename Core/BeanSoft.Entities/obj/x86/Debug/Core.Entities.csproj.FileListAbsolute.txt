@@ -1,0 +1,6 @@
+G:\ATuanLM\AuditProject\Audit\Program\Core\BeanSoft.Entities\bin\Debug\Core.Entities.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\BeanSoft.Entities\bin\Debug\Core.Entities.pdb
+G:\ATuanLM\AuditProject\Audit\Program\Core\BeanSoft.Entities\obj\x86\Debug\Core.Entities.csprojAssemblyReference.cache
+G:\ATuanLM\AuditProject\Audit\Program\Core\BeanSoft.Entities\obj\x86\Debug\Core.Entities.dll
+G:\ATuanLM\AuditProject\Audit\Program\Core\BeanSoft.Entities\obj\x86\Debug\Core.Entities.pdb
+G:\ATuanLM\AuditProject\Audit\Program\Core\BeanSoft.Entities\obj\x86\Debug\Core.Entities.csproj.CoreCompileInputs.cache
