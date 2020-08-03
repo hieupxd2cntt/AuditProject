@@ -1,9 +1,0 @@
-G:\ATuanLM\AuditProject\Audit\Program\Core\MessageQueue\bin\Debug\netcoreapp3.1\MessageQueue.deps.json
-G:\ATuanLM\AuditProject\Audit\Program\Core\MessageQueue\bin\Debug\netcoreapp3.1\MessageQueue.dll
-G:\ATuanLM\AuditProject\Audit\Program\Core\MessageQueue\bin\Debug\netcoreapp3.1\MessageQueue.pdb
-G:\ATuanLM\AuditProject\Audit\Program\Core\MessageQueue\obj\Debug\netcoreapp3.1\MessageQueue.csprojAssemblyReference.cache
-G:\ATuanLM\AuditProject\Audit\Program\Core\MessageQueue\obj\Debug\netcoreapp3.1\MessageQueue.AssemblyInfoInputs.cache
-G:\ATuanLM\AuditProject\Audit\Program\Core\MessageQueue\obj\Debug\netcoreapp3.1\MessageQueue.AssemblyInfo.cs
-G:\ATuanLM\AuditProject\Audit\Program\Core\MessageQueue\obj\Debug\netcoreapp3.1\MessageQueue.dll
-G:\ATuanLM\AuditProject\Audit\Program\Core\MessageQueue\obj\Debug\netcoreapp3.1\MessageQueue.pdb
-G:\ATuanLM\AuditProject\Audit\Program\Core\MessageQueue\obj\Debug\netcoreapp3.1\MessageQueue.csproj.CoreCompileInputs.cache

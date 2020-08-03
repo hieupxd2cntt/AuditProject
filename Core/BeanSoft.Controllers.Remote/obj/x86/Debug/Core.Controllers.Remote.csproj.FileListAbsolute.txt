@@ -1,2 +1,0 @@
-G:\ATuanLM\AuditProject\Audit\Program\Core\BeanSoft.Controllers.Remote\obj\x86\Debug\Core.Controllers.Remote.csprojAssemblyReference.cache
-G:\ATuanLM\AuditProject\Audit\Program\Core\BeanSoft.Controllers.Remote\obj\x86\Debug\Core.Controllers.Remote.csproj.CoreCompileInputs.cache

@@ -1,8 +1,0 @@
-G:\ATuanLM\AuditProject\Audit\Program\Core\Web.Entities\bin\Debug\netstandard2.0\Web.Entities.deps.json
-G:\ATuanLM\AuditProject\Audit\Program\Core\Web.Entities\bin\Debug\netstandard2.0\Web.Entities.dll
-G:\ATuanLM\AuditProject\Audit\Program\Core\Web.Entities\bin\Debug\netstandard2.0\Web.Entities.pdb
-G:\ATuanLM\AuditProject\Audit\Program\Core\Web.Entities\obj\Debug\netstandard2.0\Web.Entities.AssemblyInfoInputs.cache
-G:\ATuanLM\AuditProject\Audit\Program\Core\Web.Entities\obj\Debug\netstandard2.0\Web.Entities.AssemblyInfo.cs
-G:\ATuanLM\AuditProject\Audit\Program\Core\Web.Entities\obj\Debug\netstandard2.0\Web.Entities.csproj.CoreCompileInputs.cache
-G:\ATuanLM\AuditProject\Audit\Program\Core\Web.Entities\obj\Debug\netstandard2.0\Web.Entities.dll
-G:\ATuanLM\AuditProject\Audit\Program\Core\Web.Entities\obj\Debug\netstandard2.0\Web.Entities.pdb

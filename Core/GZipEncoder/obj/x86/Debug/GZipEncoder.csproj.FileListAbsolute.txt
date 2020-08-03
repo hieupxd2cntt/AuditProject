@@ -1,5 +1,0 @@
-G:\ATuanLM\AuditProject\Audit\Program\Core\GZipEncoder\bin\x86\Debug\GZipEncoder.dll
-G:\ATuanLM\AuditProject\Audit\Program\Core\GZipEncoder\bin\x86\Debug\GZipEncoder.pdb
-G:\ATuanLM\AuditProject\Audit\Program\Core\GZipEncoder\obj\x86\Debug\GZipEncoder.csprojAssemblyReference.cache
-G:\ATuanLM\AuditProject\Audit\Program\Core\GZipEncoder\obj\x86\Debug\GZipEncoder.dll
-G:\ATuanLM\AuditProject\Audit\Program\Core\GZipEncoder\obj\x86\Debug\GZipEncoder.pdb

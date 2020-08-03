@@ -1,4 +1,0 @@
-G:\ATuanLM\AuditProject\Audit\Program\Core\BeanSoft.Common\obj\x86\Debug\Core.Common.csprojAssemblyReference.cache
-G:\ATuanLM\AuditProject\Audit\Program\Core\BeanSoft.Common\obj\x86\Debug\Core.Properties.Resources.resources
-G:\ATuanLM\AuditProject\Audit\Program\Core\BeanSoft.Common\obj\x86\Debug\Core.Common.csproj.GenerateResource.cache
-G:\ATuanLM\AuditProject\Audit\Program\Core\BeanSoft.Common\obj\x86\Debug\Core.Common.csproj.CoreCompileInputs.cache

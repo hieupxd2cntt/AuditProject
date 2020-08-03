@@ -1,6 +1,0 @@
-G:\ATuanLM\AuditProject\Audit\Program\Core\Core.AuditLog\bin\Debug\Core.AuditLog.dll
-G:\ATuanLM\AuditProject\Audit\Program\Core\Core.AuditLog\bin\Debug\Core.AuditLog.pdb
-G:\ATuanLM\AuditProject\Audit\Program\Core\Core.AuditLog\obj\Debug\Core.AuditLog.csprojAssemblyReference.cache
-G:\ATuanLM\AuditProject\Audit\Program\Core\Core.AuditLog\obj\Debug\Core.AuditLog.dll
-G:\ATuanLM\AuditProject\Audit\Program\Core\Core.AuditLog\obj\Debug\Core.AuditLog.pdb
-G:\ATuanLM\AuditProject\Audit\Program\Core\Core.AuditLog\obj\Debug\Core.AuditLog.csproj.CoreCompileInputs.cache
